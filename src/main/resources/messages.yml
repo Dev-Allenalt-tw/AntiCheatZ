@@ -1,0 +1,29 @@
+# AntiCheatZ Messages Configuration
+# Supports standard color codes (&a, &c, etc.)
+# Supports hex colors using & prefix (e.g. &#FF5733 or &FF5733)
+# Available placeholders: %player%, %reason%, %time%
+
+# Message when a player is kicked
+kick-message: |
+  &c&lYou have been kicked!
+  
+  &7Reason: &f%reason%
+  &7Duration: &f%time%
+  
+  &8[&aAntiCheatZ&8]
+
+# Message shown when banned player tries to join
+ban-message: |
+  &c&lYou are temporarily banned!
+  
+  &7Reason: &f%reason%
+  &7Time remaining: &f%time%
+  
+  &7Appeal at: &fexample.com/appeal
+  &8[&aAntiCheatZ&8]
+
+# Broadcast message to all players when someone is detected
+broadcast-message: "&c%player% &7has been banned for &c%reason%&7!"
+
+# Console log message
+detected-log-message: "[DETECTION] Player %player% was banned for: %reason%"
