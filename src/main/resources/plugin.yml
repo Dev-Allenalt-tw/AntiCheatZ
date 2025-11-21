@@ -1,0 +1,24 @@
+name: AntiCheatZ
+version: 1.0.0
+main: dev.allenalt.anticheatz.AntiCheatZ
+author: Dev_Allenalt_tw
+api-version: 1.21
+softdepend: [PlaceholderAPI]
+description: Advanced anti-cheat detection and ban management system
+
+commands:
+  anticheatz:
+    description: Main AntiCheatZ command
+    usage: /anticheatz [reload|unban|check]
+    aliases: [acz]
+
+permissions:
+  anticheatz.reload:
+    description: Reload plugin configurations
+    default: op
+  anticheatz.unban:
+    description: Unban players
+    default: op
+  anticheatz.check:
+    description: Check player ban status
+    default: op
